@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+  </head>
+  <body ng-app="app">
+    <div ng-controller="emp">
+      a = <input ng-model="a" />
+      b = <input ng-model="b" />
+      <div>a = {{a}}</div>
+      <div>b = {{b}}</div>
+      <div>c = {{c}}</div>
+      <div>d = {{d}}</div>
+      <hr />
+      <div>e = <input ng-model="myObject.e" /> and f = <input ng-model="myObject.f" /></div>
+      <div>g = {{myObject.g}}</div>
+      <div ng-repeat="o in emps">
+        <div>{{o.empno}} - {{o.ename}}</div>
+      </div>
+      <button type="button" ng-click="addEmp()">Add</button>
+      <button type="button" ng-click="modify3rdEmp()">Modify 3rd Employee</button>
+    </div>
+  </body>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/angular.js"></script>
+  <script src="js/app.js"></script>
+</html>
